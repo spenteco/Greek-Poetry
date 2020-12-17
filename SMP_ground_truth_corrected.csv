@@ -1,0 +1,88 @@
+play,line n,text,Ground truth,same syllabification?,Correct,difference,Notes
+Hekabe,1,ἥκω νεκρῶν κευθμῶνα καὶ σκότου πύλας,ἥ κω νε κρῶν κευ θμῶ να καὶσ κό του πύ λας,False,AC,καὶσ κό,division need between σ (ς) and ensuing letter
+Hekabe,2,"λιπών, ἵνʼ ἅιδης χωρὶς ᾤκισται θεῶν,","λι πώ ν,ἵ νʼἅι δης χω ρὶ ςᾤ κισ ται θε ῶν,",False,AC,κισ τα,"division need between σ (ς) and ensuing letter; There is also this bizarre doubling of the capital letter, which recurs repeatedly"
+Hekabe,3,"Πολύδωρος, ἑκάβης παῖς γεγὼς τῆς κισσέως","Πο λύ δω ρο ς,ἑ κά βης παῖς γε γὼς τῆς κισ σέ ως",False,Ours,"ρο ς,ἑ","final letter of word needs to start 1st styllable of next word, which begins with a vowel"
+Hekabe,4,"πριάμου τε πατρός, ὅς μʼ, ἐπεὶ φρυγῶν πόλιν","πρι ά μου τε πα τρό ς,ὅς μʼ,ἐ πεὶ φρυ γῶν πό λιν",False,Ours,"ς,ὅς μʼ,ἐ",word division
+Hekabe,5,"κίνδυνος ἔσχε δορὶ πεσεῖν ἑλληνικῷ,","κίν δυ νο ςἔσ χε δο ρὶ πε σεῖ νἑλ λη νι κῷ,",False,AC,ςἔσ χε,division need between σ (ς) and ensuing letter
+Hekabe,6,δείσας ὑπεξέπεμψε τρωικῆς χθονὸς,δεί σα ςὑ πε ξέ πεμ ψε τρω ι κῆςχ θο νὸς,False,AC,τρωι κῆςχ ,iota (ι) divided from syllable to which it belongs
+Hekabe,7,"πολυμήστορος πρὸς δῶμα θρῃκίου ξένου,","πο λυ μήσ το ρος πρὸς δῶ μα θρῃ κί ου ξέ νου,",False,AC,ρίσ την,division need between σ (ς) and ensuing letter
+Hekabe,9,"σπείρει, φίλιππον λαὸν εὐθύνων δορί.","σπεί ρει, φί λιπ πον λα ὸ νεὐ θύ νων δο ρί.",True,,,
+Hekabe,10,πολὺν δὲ σὺν ἐμοὶ χρυσὸν ἐκπέμπει λάθρᾳ,πο λὺν δὲ σὺ νἐ μοὶ χρυ σὸ νἐκ πέμ πει λά θρᾳ,True,,,
+Hekabe,11,"πατήρ, ἵνʼ, εἴ ποτʼ ἰλίου τείχη πέσοι,","πα τή ρ,ἵ νʼ,εἴ πο τʼἰ λί ου τεί χη πέ σοι,",False,Ours,"ρ,ἵ νʼ,ε",word division
+Hekabe,12,τοῖς ζῶσιν εἴη παισὶ μὴ σπάνις βίου.,τοῖς ζῶ σι νεἴ η παι σὶ μὴσ πά νις βί ου.,False,AC,μὴσ πά,division need between σ (ς) and ensuing letter
+Hekabe,13,"νεώτατος δʼ ἦ Πριαμιδῶν, ὃ καί με γῆς","νε ώ τα τος δʼἦ Πρι α μι δῶ ν,ὃ καί με γῆς",False,Ours,"δῶ ν,ὃ ","word division; There is also this bizarre doubling of the capital letter, which recurs repeatedly"
+Hekabe,14,ὑπεξέπεμψεν· οὔτε γὰρ φέρειν ὅπλα,ὑ πε ξέ πεμ ψε ν·οὔ τε γὰρ φέ ρει νὅ πλα,False,Ours,ν·οὔ ,word division
+Hekabe,15,οὔτʼ ἔγχος οἷός τʼ ἦ νέῳ βραχίονι.,οὔ τʼἔγ χο ςοἷ ός τʼἦ νέ ῳ βρα χί ο νι.,True,,,
+Hekabe,16,ἕως μὲν οὖν γῆς ὄρθʼ ἔκειθʼ ὁρίσματα,ἕ ως μὲ νοὖν γῆ ςὄρ θʼἔ κει θʼὁ ρίσ μα τα,False,AC,ρίσ μα,division need between σ (ς) and ensuing letter
+Hekabe,17,πύργοι τʼ ἄθραυστοι τρωικῆς ἦσαν χθονὸς,πύρ γοι τʼἄ θραυσ τοι τρω ι κῆ ςἦ σανχ θο νὸς,False,AC,θραυσ τοι,division need between σ (ς) and ensuing letter
+Hekabe,18,"ἕκτωρ τʼ ἀδελφὸς οὑμὸς εὐτύχει δορί,","ἕκ τωρ τʼἀ δελ φὸ ςοὑ μὸ ςεὐ τύ χει δο ρί,",False,AC,ἕκ τωρ,division between κ and ensuing letter
+Hekabe,19,καλῶς παρʼ ἀνδρὶ θρῃκὶ πατρῴῳ ξένῳ,κα λῶς πα ρʼἀν δρὶ θρῃ κὶ πα τρῴ ῳ ξέ νῳ,True,,,
+Hekabe,20,"τροφαῖσιν ὥς τις πτόρθος ηὐξόμην, τάλας·","τρο φαῖ σι νὥς τιςπ τόρ θο ςηὐ ξό μην, τά λας·",False,both, τιςπ τόρ,"when there are three consonants, it doesn't matter whether we divide between the first and the second or the second and the third"
+Hekabe,21,ἐπεὶ δὲ τροία θʼ ἕκτορός τʼ ἀπόλλυται,ἐ πεὶ δὲ τροί α θʼἕκ το ρός τʼἀ πόλ λυ ται,False,AC,θʼἕκ το,division between κ and ensuing letter
+Hekabe,22,"ψυχή, πατρῴα θʼ ἑστία κατεσκάφη,","ψυ χή, πα τρῴ α θʼἑσ τί α κα τεσ κά φη,",False,AC,θʼἑσ τί ,division need between σ (ς) and ensuing letter
+Hekabe,23,αὐτὸς δὲ βωμῷ πρὸς θεοδμήτῳ πίτνει,αὐ τὸς δὲ βω μῷ πρὸς θε οδ μή τῳ πί τνει,False,AC,πί τνει,division between mute and liquid (τν)
+Hekabe,24,"σφαγεὶς ἀχιλλέως παιδὸς ἐκ μιαιφόνου,","σφα γεὶ ςἀ χιλ λέως παι δὸ ςἐ κμι αι φό νου,",False,AC,ςἐ κμι,division between mute and liquid (κμ)
+Hekabe,25,κτείνει με χρυσοῦ τὸν ταλαίπωρον χάριν,κτεί νει με χρυ σοῦ τὸν τα λαί πω ρον χά ριν,True,,,
+Hekabe,26,ξένος πατρῷος καὶ κτανὼν ἐς οἶδμʼ ἁλὸς,ξέ νος πα τρῷ ος καὶκ τα νὼ νἐ ςοἶδ μʼἁ λὸς,False,AC,καὶκ τα,division between κ and ensuing letter
+Hekabe,29,"πολλοῖς διαύλοις κυμάτων φορούμενος,","πολ λοῖς δι αύ λοις κυ μά των φο ρού με νος,",True,,,
+Hekabe,30,ἄκλαυτος ἄταφος· νῦν δʼ ὑπὲρ μητρὸς φίλης,ἄ κλαυ το ςἄ τα φος· νῦν δʼὑ πὲρ μη τρὸς φί λης,True,,,
+Hekabe,31,"ἑκάβης ἀίσσω, σῶμʼ ἐρημώσας ἐμόν,","ἑ κά βη ςἀ ίσ σω, σῶ μʼἐ ρη μώ σα ςἐ μόν,",False,Ours,βη ςἀίσ,iota divided from syllable where it belongs (AC)
+Hekabe,32,"τριταῖον ἤδη φέγγος αἰωρούμενος,","τρι ταῖ ο νἤ δη φέγ γο ςαἰ ω ρού με νος,",True,,,
+Hekabe,33,ὅσονπερ ἐν γῇ τῇδε χερσονησίᾳ,ὅ σον πε ρἐν γῇ τῇ δε χερ σο νη σί ᾳ,True,,,
+Hekabe,34,μήτηρ ἐμὴ δύστηνος ἐκ τροίας πάρα.,μή τη ρἐ μὴ δύσ τη νο ςἐκ τροί ας πά ρα.,False,AC,"δύσ τη, ςἐκ τροί ",division need between σ (ς) and ensuing letter; division between kappa and ensuing letter
+Hekabe,35,πάντες δʼ ἀχαιοὶ ναῦς ἔχοντες ἥσυχοι,πάν τες δʼἀ χαι οὶ ναῦ ςἔ χον τε ςἥ συ χοι,True,,,
+Hekabe,36,θάσσουσʼ ἐπʼ ἀκταῖς τῆσδε θρῃκίας χθονός·,θάσ σου σʼἐ πʼἀκ ταῖς τῆσ δε θρῃ κί αςχ θο νός·,False,AC,πʼἀκ ταῖς,division between κ and ensuing letter
+Hekabe,37,ὁ πηλέως γὰρ παῖς ὑπὲρ τύμβου φανεὶς,ὁ πη λέ ως γὰρ παῖ ςὑ πὲρ τύμ βου φα νεὶς,True,,,
+Hekabe,38,"κατέσχʼ ἀχιλλεὺς πᾶν στράτευμʼ ἑλληνικόν,","κα τέσ χʼἀ χιλ λεὺς πᾶνσ τρά τευ μʼἑλ λη νι κόν,",False,AC,τέσ χʼἀ,division need between σ (ς) and ensuing letter
+Hekabe,39,πρὸς οἶκον εὐθύνοντας ἐναλίαν πλάτην·,πρὸ ςοἶ κο νεὐ θύ νον τα ςἐ να λί αν πλά την·,True,,,
+Hekabe,40,αἰτεῖ δʼ ἀδελφὴν τὴν ἐμὴν πολυξένην,αἰ τεῖ δʼἀ δελ φὴν τὴ νἐ μὴν πο λυ ξέ νην,True,,,
+Hekabe,41,τύμβῳ φίλον πρόσφαγμα καὶ γέρας λαβεῖν.,τύμ βῳ φί λον πρόσ φαγ μα καὶ γέ ρας λα βεῖν.,False,AC,πρόσ φαγ,division need between σ (ς) and ensuing letter
+Hekabe,42,"καὶ τεύξεται τοῦδʼ, οὐδʼ ἀδώρητος φίλων","καὶ τεύ ξε ται τοῦ δʼ,οὐ δʼἀ δώ ρη τος φί λων",False,Ours,"τοῦδʼ, οὐ",word division
+Hekabe,43,ἔσται πρὸς ἀνδρῶν· ἡ πεπρωμένη δʼ ἄγει,ἔσ ται πρὸ ςἀν δρῶ ν·ἡ πε πρω μέ νη δʼἄ γει,False,AC,ἔσ ται,division need between σ (ς) and ensuing letter
+Hekabe,44,θανεῖν ἀδελφὴν τῷδʼ ἐμὴν ἐν ἤματι.,θα νεῖ νἀ δελ φὴν τῷ δʼἐ μὴ νἐ νἤ μα τι.,True,,,
+Hekabe,45,δυοῖν δὲ παίδοιν δύο νεκρὼ κατόψεται,δυ οῖν δὲ παί δοιν δύ ο νε κρὼ κα τό ψε ται,True,,,
+Hekabe,46,"μήτηρ, ἐμοῦ τε τῆς τε δυστήνου κόρης.","μή τη ρ,ἐ μοῦ τε τῆς τε δυσ τή νου κό ρης.",False,AC,δυσ τή,division need between σ (ς) and ensuing letter
+Hekabe,47,"φανήσομαι γάρ, ὡς τάφου τλήμων τύχω,","φα νή σο μαι γά ρ,ὡς τά φου τλή μων τύ χω,",False,Ours,"γά ρ,ὡς",word division
+Hekabe,48,δούλης ποδῶν πάροιθεν ἐν κλυδωνίῳ.,δού λης πο δῶν πά ροι θε νἐν κλυ δω νί ῳ.,True,,,
+Hekabe,49,τοὺς γὰρ κάτω σθένοντας ἐξῃτησάμην,τοὺς γὰρ κά τωσ θέ νον τα ςἐ ξῃ τη σά μην,False,AC,τωσ θέ,division need between σ (ς) and ensuing letter
+Hekabe,50,τύμβου κυρῆσαι κἀς χέρας μητρὸς πεσεῖν.,τύμ βου κυ ρῆ σαι κἀς χέ ρας μη τρὸς πε σεῖν.,True,,,
+Hekabe,51,τοὐμὸν μὲν οὖν ὅσονπερ ἤθελον τυχεῖν,τοὐ μὸν μὲ νοὖ νὅ σον πε ρἤ θε λον τυ χεῖν,True,,,
+Hekabe,52,ἔσται· γεραιᾷ δʼ ἐκποδὼν χωρήσομαι,ἔσ ται· γε ραι ᾷ δʼἐκ πο δὼν χω ρή σο μαι,False,AC,ἔσ ται,division need between σ (ς) and ensuing letter
+Hekabe,53,Ἑκάβῃ· περᾷ γὰρ ἥδʼ ὑπὸ σκηνῆς πόδα,Ἑ κά βῃ· πε ρᾷ γὰ ρἥ δʼὑ πὸσ κη νῆς πό δα,False,AC,πὸσ κη,division need between σ (ς) and ensuing letter; also bizare doubling of capital letter
+Hekabe,54,"Ἀγαμέμνονος, φάντασμα δειμαίνουσʼ ἐμόν.","Ἀ γα μέμ νο νος, φάν τασ μα δει μαί νου σʼἐ μόν.",False,AC,"μέμ νο, τασ μα",division between μ (mu) and ensuing letter; division between sigma and ensuing letter; bizarre doubling of upper case letter
+Hekabe,55,ὦ μῆτερ ἥτις ἐκ τυραννικῶν δόμων,ὦ μῆ τε ρἥ τι ςἐκ τυ ραν νι κῶν δό μων,False,AC,ςἐκ τυ,division need between σ (ς) and ensuing letter
+Hekabe,56,"δούλειον ἦμαρ εἶδες, ὡς πράσσεις κακῶς","δού λει ο νἦ μα ρεἶ δε ς,ὡς πράσ σεις κα κῶς",False,Ours,"δε ς,ὡς",word division
+Hekabe,57,ὅσονπερ εὖ ποτʼ· ἀντισηκώσας δέ σε,ὅ σον πε ρεὖ πο τʼ·ἀν τι ση κώ σας δέ σε,False,ours,πο τʼ·ἀν,word division
+Hekabe,58,φθείρει θεῶν τις τῆς πάροιθʼ εὐπραξίας.,φθεί ρει θε ῶν τις τῆς πά ροι θʼεὐ πρα ξί ας.,True,,,
+Hekabe,59,"ἄγετʼ, ὦ παῖδες, τὴν γραῦν πρὸ δόμων,","ἄ γε τʼ,ὦ παῖ δες, τὴν γραῦν πρὸ δό μων,",False,Ours,"γε τʼ,ὦ",word division
+Hekabe,60,"ἄγετʼ ὀρθοῦσαι τὴν ὁμόδουλον,","ἄ γε τʼὀρ θοῦ σαι τὴ νὁ μό δου λον,",True,,,
+Hekabe,64,γεραιᾶς χειρὸς προσλαζύμεναι·,γε ραι ᾶς χει ρὸς προσ λα ζύ με ναι·,True,,,
+Hekabe,65,κἀγὼ σκολιῷ σκίπωνι χερὸς,κἀ γὼσ κο λι ῷσ κί πω νι χε ρὸς,False,AC,γὼσ κο,division need between σ (ς) and ensuing letter
+Hekabe,66,διερειδομένη σπεύσω βραδύπουν,δι ε ρει δο μέ νησ πεύ σω βρα δύ πουν,False,AC,νησ πεύ,division need between σ (ς) and ensuing letter
+Hekabe,67,ἤλυσιν ἄρθρων προτιθεῖσα.,ἤ λυ σι νἄρ θρων προ τι θεῖ σα.,False,AC,σι νἄρ,word division
+Hekabe,68,"ὦ στεροπὰ διό ς, ὦ σκοτία νύξ,","ὦσ τε ρο πὰ δι ό ς,ὦσ κο τί α νύξ,",False,AC,"ὦσ τε, ὦσ κο",division need between σ (ς) and ensuing letter
+Hekabe,69,τί ποτʼ αἴρομαι ἔν νυχος οὕτω,τί πο τʼαἴ ρο μαι ἔν νυ χο ςοὕ τω,True,,,
+Hekabe,71,"μελανοπτερύγων μᾶτερ ὀνείρων,","με λα νοπ τε ρύ γων μᾶ τε ρὀ νεί ρων,",False,AC,νοπ τε,division between π (pi) and ensuing letter
+Hekabe,72,"ἀποπέμπομαι ἔν νυχον ὄψιν,","ἀ πο πέμ πο μαι ἔν νυ χο νὄ ψιν,",True,,,
+Hekabe,79,"ὦ χθόνιοι θεοί, σώσατε παῖδʼ ἐμόν,","ὦχ θό νι οι θε οί, σώ σα τε παῖ δʼἐ μόν,",True,,,
+Hekabe,80,ὃς μόνος οἴκω ν ἄγκυρʼ ἔτʼ ἐμῶν,ὃς μό νο ςοἴ κω νἄγ κυ ρʼἔ τʼἐ μῶν,True,,,
+Hekabe,81,τὴν χιονώδη θρῄκην κατέχει,τὴν χι ο νώ δη θρῄ κην κα τέ χει,True,,,
+Hekabe,82,ξείνου πατρίου φυλακαῖσιν.,ξεί νου πα τρί ου φυ λα καῖ σιν.,True,,,
+Hekabe,83,ἔσται τι νέον·,ἔσ ται τι νέ ον·,False,AC,ἔσ ται,division need between σ (ς) and ensuing letter
+Hekabe,84,ἥξει τι μέλος γοερὸν γοεραῖς.,ἥ ξει τι μέ λος γο ε ρὸν γο ε ραῖς.,True,,,
+Hekabe,85,οὔποτʼ ἐμὰ φρὴ ν ὧδʼ ἀλίαστον,οὔ πο τʼἐ μὰ φρὴ νὧ δʼἀ λί ασ τον,False,AC,ασ τον,division need between σ (ς) and ensuing letter
+Hekabe,86,"φρίσσει, ταρβεῖ.","φρίσ σει, ταρ βεῖ.",True,,,
+Hekabe,87,ποῦ ποτε θεία ν ἑλένου ψυχὰν,ποῦ πο τε θεί α νἑ λέ νου ψυ χὰν,True,,,
+Hekabe,89,ὥς μοι κρίνω σιν ὀνείρους;,ὥς μοι κρί νω σι νὀ νεί ρους;,True,,,
+Hekabe,90,[εἶδον γὰρ βαλι ὰν ἔλα φον λύκου αἵμονι χαλᾷ,[εἶ δον γὰρ βα λι ὰ νἔ λα φον λύ κου αἵ μο νι χα λᾷ,True,,,
+Hekabe,91,"σφαζομέ ναν, ἀπʼ ἐ μῶν γονά των σπασ θεῖσαν ἀ νοίκτως.","σφα ζο μέ να ν,ἀ πʼἐ μῶν γο νά τωνσ πασ θεῖ σα νἀ νοίκ τως.",False,AC,νοίκ τως,division between κ and ensuing letter
+Hekabe,92,καὶ τόδε δεῖμά μοι·,καὶ τό δε δεῖ μά μοι·,True,,,
+Hekabe,93,ἦλθʼ ὑπὲρ ἄκρας τύμβου κορυφᾶς,ἦλ θʼὑ πὲ ρἄ κρας τύμ βου κο ρυ φᾶς,True,,,
+Hekabe,96,ἀπʼ ἐμᾶς οὖν ἀπʼ ἐ μᾶς οὖν τόδε παιδὸς,ἀ πʼἐ μᾶ ςοὖ νἀ πʼἐ μᾶ ςοὖν τό δε παι δὸς,True,,,
+Hekabe,97,"πέμψατε, δαίμονε ς, ἱκετεύω.]","πέμ ψα τε, δαί μο νε ς,ἱ κε τεύ ω.]",False,Ours,"νε ς,ἱ",word division
+Hekabe,98,"Ἑκάβη, σπουδῇ πρός σʼ ἐλιάσθην","Ἑ κά βη,σ που δῇ πρός σʼἐ λι άσ θην",False,AC,"βη,σ που, άσ θη",
+Hekabe,99,"τὰς δεσποσύνους σκηνὰς προλιποῦσʼ,","τὰς δεσ πο σύ νουςσ κη νὰς προ λι ποῦσʼ,",False,AC,δεσ πο,division need between σ (ς) and ensuing letter
+Hekabe,62-3,[λάβετε φέρετε πέμ πετʼ ἀείρετέ μου],[λά βε τε φέ ρε τε πέμ πε τʼἀ εί ρε τέ μου],True,,,
+Hekabe,73-4,ἣν περὶ παιδὸς ἐ μοῦ τοῦ σῳζομέ νου κατὰ θρῄκην,ἣν πε ρὶ παι δὸ ςἐ μοῦ τοῦ σῳ ζο μέ νου κα τὰ θρῄ κην,True,,,
+Hekabe,75-6,ἀμφὶ πο λυξεί νης τε φί λης θυγα τρὸς διʼ ὀ νείρων,ἀμ φὶ πο λυ ξεί νης τε φί λης θυ γα τρὸς διʼ ὀ νεί ρων,False,Ours,διʼ ὀ,2 syllables considered as one
+Hekabe,77-8,†εἶδον γὰρ φοβε ρὰν ὄ ψιν ἔμαθο ν ἐδάην†].,†εἶ δον γὰρ φο βε ρὰ νὄ ψι νἔ μα θο νἐ δά ην†].,True,,,

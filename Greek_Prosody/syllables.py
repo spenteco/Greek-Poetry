@@ -115,8 +115,122 @@ def join_resolutions(syl_list):
         if s.strip().strip(PUNCTUATION).endswith('|'):
             waiting = True
     return new_syls
+    
+def syllabify_moore_rules(line):
+    """Breaks a string of Greek text into its constituent syllables
+    according to Tim Moore's syllabification rules.
+    
+    :param str line: a string of Greek text, resolutions marked if desired.
+    :return list syls: a list of strings, each containing a syllable
+    
+    """
+    
+    ADDITIONAL_PUNCTUATION = "ʼ"
+    
+    characters = []
+    
+    for c in line:
+        c_type = ''
+        if basic_chars(c.lower()) in VOWELS:
+            c_type = 'v'
+        elif basic_chars(c.lower()) in CONSONANTS:
+            c_type = 'c'
+        elif c in PUNCTUATION + ADDITIONAL_PUNCTUATION:
+            c_type = 'p'
+        elif c != ' ':
+             print('syllabify_moore_rules', 'UNDEFINED CHARACTER', c)
+        if c_type > '':
+            characters.append({'working_chars': [c], 'type': c_type, 'print_chars': [c]})
+    
+    joined_characters = [characters[0]]
+    
+    for c in characters[1:]:
+        
+        last_c = joined_characters[-1]
+        
+        if c['type'] == last_c['type']:
+            
+            if c['type'] == 'v':
+                
+                if basic_chars(''.join(last_c['working_chars'] + \
+                                            c['working_chars'])) in DIPHTHONGS:
+                                                
+                    joined_characters[-1]['working_chars'].append(c['working_chars'][0])
+                    joined_characters[-1]['print_chars'].append(c['print_chars'][0])
+                    
+                else:
+                    joined_characters.append(c)
+                    
+            elif c['type'] == 'p':
+                joined_characters[-1]['print_chars'].append(c['print_chars'][0])
+                    
+            elif c['type'] == 'c':   
+                
+                if (joined_characters[-1]['working_chars'][0] + \
+                        c['working_chars'][0]).lower() in MUTE_LIQUID:
+                           
+                    joined_characters[-1]['working_chars'].append(c['working_chars'][0])
+                    joined_characters[-1]['print_chars'].append(c['print_chars'][0])
+                    
+                elif len(joined_characters) == 1:
+                           
+                    joined_characters[-1]['working_chars'].append(c['working_chars'][0])
+                    joined_characters[-1]['print_chars'].append(c['print_chars'][0])
+                    
+                else:
+                    joined_characters.append(c)
+                    
+        elif c['type'] == 'p':
+            joined_characters[-1]['print_chars'].append(c['print_chars'][0])
+        else:
+            joined_characters.append(c)
+            
+    if joined_characters[0]['type'] == 'p':
+        joined_characters[1]['print_chars'] = joined_characters[0]['print_chars'] + \
+                                                joined_characters[1]['print_chars']
+        del joined_characters[0]
+        
+    syllables = [[joined_characters[0]]]
+    
+    for a, c in enumerate(joined_characters):
 
-def get_syllables (text, strip=False, resolutions=True):
+        if a == 0:
+            pass
+
+        elif c['type'] == 'v':
+
+            preceeding_syllable_has_vowel = False
+            for preceeding_c in syllables[-1]:
+                if preceeding_c['type'] == 'v':
+                    preceeding_syllable_has_vowel = True
+            
+            if preceeding_syllable_has_vowel:
+                syllables.append([c])
+            else:
+                syllables[-1].append(c)
+                
+        elif c['type'] == 'c':
+            
+            if a + 1 == len(joined_characters):
+                syllables[-1].append(c)
+            elif joined_characters[a + 1]['type'] == 'c':
+                syllables[-1].append(c)
+            else:
+                syllables.append([c])
+                    
+        else:
+            print('syllabify_moore_rules', 'ERROR bad character type (b)?', c)
+    
+    syllable_strings = []
+    for s in syllables:
+        syl = ''
+        for c in s:
+            syl = syl + ''.join(c['print_chars'])
+        syllable_strings.append(syl)
+        
+    return syllable_strings
+
+def get_syllables (text, strip=False, resolutions=True, use_moore_rules=False):
     """Breaks a string of Greek text into its constituent syllables. Single 
     consonants are grouped with the following vowel, unless word-final. Double
     consonants are split between two syllables, unless word-initial or one of 
@@ -134,9 +248,16 @@ def get_syllables (text, strip=False, resolutions=True):
     :param str text: a string of Greek text, resolutions marked if desired.
     :param bool strip: if marked True, trailing whitespace will be removed
     :param bool resolutions: if marked True, resolved syllables will be joined
+    :param bool use_moore_rules: if marked True, syllabify using Tim Moore's
+        rules.  His rules, unlike, Anna Conser's, basically ignore punctuation,
+        and will thus allow for syllables which span word boundaries.
     :return list syls: a list of strings, each containing a syllable
     
     """
+    
+    if use_moore_rules == True:
+        return(syllabify_moore_rules(text))
+    
     syls = []
     current_syl = ''
     #Iterate through text in reverse, adding each char to the front of the 
